@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кафе БАЯН — Домашняя кухня</title>
+    <meta name="description" content="Кафе БАЯН — уютное кафе с домашней кухней. Буузы, плов, борщ, выпечка и многое другое. Доступные цены, вкусная еда.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header__inner">
+            <a href="#hero" class="header__logo">
+                <img src="images/logo.svg" alt="Кафе БАЯН" class="header__logo-img">
+            </a>
+            <nav class="header__nav" id="nav">
+                <ul class="header__nav-list">
+                    <li><a href="#hero" class="header__nav-link" data-nav>Главная</a></li>
+                    <li><a href="#about" class="header__nav-link" data-nav>О нас</a></li>
+                    <li><a href="#menu" class="header__nav-link" data-nav>Меню</a></li>
+                    <li><a href="#contacts" class="header__nav-link" data-nav>Контакты</a></li>
+                </ul>
+            </nav>
+            <a href="tel:+79242958903" class="header__phone">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                <span>8 (924) 295-89-03</span>
+            </a>
+            <button class="header__burger" id="burger" aria-label="Меню">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero__overlay"></div>
+        <div class="container hero__inner">
+            <img src="images/logo.svg" alt="Кафе БАЯН" class="hero__logo">
+            <h1 class="hero__title">Кафе «БАЯН»</h1>
+            <p class="hero__subtitle">Домашняя кухня с душой и теплом</p>
+            <div class="hero__actions">
+                <a href="#menu" class="btn btn--primary">Наше меню</a>
+                <a href="tel:+79242958903" class="btn btn--outline">Позвонить</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">О нашем кафе</h2>
+            <div class="about__content">
+                <div class="about__text">
+                    <p>Добро пожаловать в кафе <strong>«БАЯН»</strong>! Мы готовим с любовью и заботой, используя только свежие и натуральные продукты.</p>
+                    <p>В нашем меню вы найдёте блюда домашней кухни: наваристые супы, сочные буузы, ароматный плов, свежую выпечку и многое другое. Каждое блюдо приготовлено по проверенным рецептам, как дома у бабушки.</p>
+                    <p>Приходите к нам — мы всегда рады гостям!</p>
+                </div>
+                <div class="about__features">
+                    <div class="feature">
+                        <div class="feature__icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                        </div>
+                        <h3 class="feature__title">Свежие продукты</h3>
+                        <p class="feature__text">Только натуральные ингредиенты</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature__icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                        </div>
+                        <h3 class="feature__title">Быстро и вкусно</h3>
+                        <p class="feature__text">Блюда готовятся с душой</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature__icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                        </div>
+                        <h3 class="feature__title">Доступные цены</h3>
+                        <p class="feature__text">Вкусно поесть — не значит дорого</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <h2 class="section-title">Наше меню</h2>
+            <p class="section-subtitle">Меню кафе «БАЯН»</p>
+
+            <!-- Menu category tabs -->
+            <div class="menu__tabs">
+                <button class="menu__tab active" data-tab="cold">Закуски</button>
+                <button class="menu__tab" data-tab="breakfast">Завтраки</button>
+                <button class="menu__tab" data-tab="first">Первые блюда</button>
+                <button class="menu__tab" data-tab="second">Вторые блюда</button>
+                <button class="menu__tab" data-tab="garnish">Гарниры</button>
+                <button class="menu__tab" data-tab="bakery">Выпечка</button>
+                <button class="menu__tab" data-tab="drinks">Напитки</button>
+            </div>
+
+            <!-- Cold appetizers -->
+            <div class="menu__category active" id="cat-cold">
+                <h3 class="menu__category-title">Холодные закуски</h3>
+                <div class="menu__grid">
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/ovoshchnoj-salat.svg" alt="Овощной салат" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Овощной салат</h4>
+                            <p class="menu-card__desc">Капуста, морковь, лук</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">100 гр.</span>
+                                <span class="menu-card__price">80 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/olivie.svg" alt="Оливье" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Оливье</h4>
+                            <p class="menu-card__desc">Картофель, лук, морковь, чеснок, огурцы, мясо, яйцо</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">100 гр.</span>
+                                <span class="menu-card__price">100 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/vinegret.svg" alt="Винегрет / Крабовый" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Винегрет / Крабовый</h4>
+                            <p class="menu-card__desc">Классический салат</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">100 гр.</span>
+                                <span class="menu-card__price">100 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/seld-pod-shuboj.svg" alt="Сельдь под шубой" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Сельдь под шубой</h4>
+                            <p class="menu-card__desc">Рыба, лук, картофель, морковь, яйцо, свекла, майонез</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">120 гр.</span>
+                                <span class="menu-card__price">120 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/svekolnyj-salat.svg" alt="Свекольный салат" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Свекольный салат</h4>
+                            <p class="menu-card__desc">Свекла, чеснок, майонез</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">100 гр.</span>
+                                <span class="menu-card__price">90 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Breakfast -->
+            <div class="menu__category" id="cat-breakfast">
+                <h3 class="menu__category-title">Завтраки</h3>
+                <div class="menu__grid">
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/glazunya.svg" alt="Глазунья" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Глазунья</h4>
+                            <p class="menu-card__desc">Яичница-глазунья</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">2 шт.</span>
+                                <span class="menu-card__price">80 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/kolbasa-zharenaya.svg" alt="Колбаса жареная" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Колбаса жареная</h4>
+                            <p class="menu-card__desc">Жареная колбаса</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">100 гр.</span>
+                                <span class="menu-card__price">80 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/kasha.svg" alt="Каши" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Каши рисовая, манная</h4>
+                            <p class="menu-card__desc">С маслом</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">400 гр.</span>
+                                <span class="menu-card__price">120 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- First courses -->
+            <div class="menu__category" id="cat-first">
+                <h3 class="menu__category-title">Первые блюда</h3>
+                <div class="menu__grid">
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/aarsa.svg" alt="Аарса" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Аарса</h4>
+                            <p class="menu-card__desc">Традиционный бурятский суп</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">500 гр.</span>
+                                <span class="menu-card__price">70 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/borshch.svg" alt="Борщ, Рассольник" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Борщ, Рассольник</h4>
+                            <p class="menu-card__desc">Наваристый суп</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">500 гр.</span>
+                                <span class="menu-card__price">160 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/lagman.svg" alt="Лагман" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Лагман</h4>
+                            <p class="menu-card__desc">Густой суп с лапшой</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">500 гр.</span>
+                                <span class="menu-card__price">180 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/sup-domashnij.svg" alt="Суп домашний" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Суп домашний</h4>
+                            <p class="menu-card__desc">На заказ, ожидание 5 минут</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">500 гр.</span>
+                                <span class="menu-card__price">160 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/banshataj.svg" alt="Баншатай" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Баншатай</h4>
+                            <p class="menu-card__desc">На заказ, ожидание 8 минут</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">500 гр.</span>
+                                <span class="menu-card__price">180 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/pelmeni.svg" alt="Пельмени" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Пельмени</h4>
+                            <p class="menu-card__desc">На заказ, ожидание 8 минут</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">12 шт.</span>
+                                <span class="menu-card__price">180 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second courses -->
+            <div class="menu__category" id="cat-second">
+                <h3 class="menu__category-title">Вторые блюда</h3>
+                <div class="menu__grid">
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/buuzy.svg" alt="Буузы" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Буузы</h4>
+                            <p class="menu-card__desc">Традиционное бурятское блюдо</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">80 гр.</span>
+                                <span class="menu-card__price">90 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/vareniki.svg" alt="Вареники с картофелем" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Вареники с картофелем</h4>
+                            <p class="menu-card__desc">Домашние вареники</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">4 шт.</span>
+                                <span class="menu-card__price">160 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/gulyash.svg" alt="Гуляш из говядины" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Гуляш из говядины</h4>
+                            <p class="menu-card__desc">Нежное мясо в соусе</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">100 гр.</span>
+                                <span class="menu-card__price">150 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/gorbusha.svg" alt="Горбуша запеченная" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Горбуша запеченная с картофелем</h4>
+                            <p class="menu-card__desc">Рыба с гарниром</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">1 шт.</span>
+                                <span class="menu-card__price">300 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/ryba-pod-marinadom.svg" alt="Рыба под маринадом" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Рыба под маринадом</h4>
+                            <p class="menu-card__desc">Минтай</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">100 гр.</span>
+                                <span class="menu-card__price">100 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/zharkoe.svg" alt="Жаркое" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Жаркое с курицей/свининой</h4>
+                            <p class="menu-card__desc">Сытное горячее блюдо</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">300 гр.</span>
+                                <span class="menu-card__price">210 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/kotleta.svg" alt="Котлета" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Котлета</h4>
+                            <p class="menu-card__desc">Домашняя котлета</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">100 гр.</span>
+                                <span class="menu-card__price">150 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/kuritsa.svg" alt="Курица" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Курица</h4>
+                            <p class="menu-card__desc">Порция курицы</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">140 гр.</span>
+                                <span class="menu-card__price">190 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/myaso-verevochkoj.svg" alt="Мясо верёвочкой" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Мясо верёвочкой</h4>
+                            <p class="menu-card__desc">Свинина, лук, перец, морковь, соус</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">120 гр.</span>
+                                <span class="menu-card__price">190 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/myaso-po-kitajski.svg" alt="Мясо по-китайски" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Мясо по-китайски с лапшой фунчоза</h4>
+                            <p class="menu-card__desc">Мясо с стеклянной лапшой</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">300 гр.</span>
+                                <span class="menu-card__price">220 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/plov.svg" alt="Плов" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Плов</h4>
+                            <p class="menu-card__desc">Ароматный плов</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">300 гр.</span>
+                                <span class="menu-card__price">210 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/tefteli.svg" alt="Тефтели" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Тефтели</h4>
+                            <p class="menu-card__desc">Мясные тефтели</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">2 шт.</span>
+                                <span class="menu-card__price">150 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/solyanka.svg" alt="Солянка" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Солянка</h4>
+                            <p class="menu-card__desc">Наваристая солянка</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">300 гр.</span>
+                                <span class="menu-card__price">210 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/svinina-podzharka.svg" alt="Свинина поджарка" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Свинина поджарка / с грибами</h4>
+                            <p class="menu-card__desc">Жареная свинина</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">120 гр.</span>
+                                <span class="menu-card__price">190 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/tsujvan.svg" alt="Цуйван" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Цуйван</h4>
+                            <p class="menu-card__desc">Лапша с мясом и овощами</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">300 гр.</span>
+                                <span class="menu-card__price">220 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/kartofel-fri.svg" alt="Картофель фри" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Картофель фри</h4>
+                            <p class="menu-card__desc">На заказ, ожидание 5 минут</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">150 гр.</span>
+                                <span class="menu-card__price">180 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/naggetsy.svg" alt="Наггетсы" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Наггетсы</h4>
+                            <p class="menu-card__desc">Куриные наггетсы</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">4 шт.</span>
+                                <span class="menu-card__price">160 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Garnish -->
+            <div class="menu__category" id="cat-garnish">
+                <h3 class="menu__category-title">Гарниры</h3>
+                <div class="menu__grid">
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/pyure.svg" alt="Пюре картофельное" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Пюре картофельное</h4>
+                            <p class="menu-card__desc">Нежное пюре</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">200 гр.</span>
+                                <span class="menu-card__price">90 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/rozhki.svg" alt="Рожки" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Рожки</h4>
+                            <p class="menu-card__desc">Макаронные изделия</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">200 гр.</span>
+                                <span class="menu-card__price">80 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/ris-grechka.svg" alt="Рис, гречка" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Рис, гречка</h4>
+                            <p class="menu-card__desc">Крупяной гарнир</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">200 гр.</span>
+                                <span class="menu-card__price">80 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/lapsha-domashnyaya.svg" alt="Лапша домашняя" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Лапша домашняя</h4>
+                            <p class="menu-card__desc">Домашняя лапша</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">200 гр.</span>
+                                <span class="menu-card__price">80 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bakery -->
+            <div class="menu__category" id="cat-bakery">
+                <h3 class="menu__category-title">Выпечка</h3>
+                <div class="menu__grid">
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/bliny.svg" alt="Блины" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Блины</h4>
+                            <p class="menu-card__desc">Со сгущёнкой или сметаной</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">2 шт.</span>
+                                <span class="menu-card__price">65 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/vafelnaya-trubochka.svg" alt="Вафельная трубочка" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Вафельная трубочка</h4>
+                            <p class="menu-card__desc">С начинкой «варёнка»</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">1 шт.</span>
+                                <span class="menu-card__price">65 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/cheburek.svg" alt="Чебурек" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Чебурек</h4>
+                            <p class="menu-card__desc">Хрустящий чебурек с мясом</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">1 шт.</span>
+                                <span class="menu-card__price">130 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/kurnik.svg" alt="Курник" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Курник</h4>
+                            <p class="menu-card__desc">Пирог с курицей</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">1 шт.</span>
+                                <span class="menu-card__price">150 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/pitstsa.svg" alt="Пицца" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Пицца</h4>
+                            <p class="menu-card__desc">Мини-пицца</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">1 шт.</span>
+                                <span class="menu-card__price">80 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/pirozhki.svg" alt="Пирожки" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Пирожки / Пирог с яблоком</h4>
+                            <p class="menu-card__desc">С капустой или картофелем</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">1 шт.</span>
+                                <span class="menu-card__price">70 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/pirozhki-liver.svg" alt="Пирожки с ливером" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Пирожки с ливером/мясом и рисом</h4>
+                            <p class="menu-card__desc">Сытные пирожки</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">1 шт.</span>
+                                <span class="menu-card__price">70 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/sosiska-v-teste.svg" alt="Сосиска в тесте" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Сосиска в тесте</h4>
+                            <p class="menu-card__desc">Жареная или печёная</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">1 шт.</span>
+                                <span class="menu-card__price">80 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/hleb.svg" alt="Хлеб" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Хлеб</h4>
+                            <p class="menu-card__desc">Свежий хлеб</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">1 шт.</span>
+                                <span class="menu-card__price">5 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Drinks -->
+            <div class="menu__category" id="cat-drinks">
+                <h3 class="menu__category-title">Напитки</h3>
+                <div class="menu__grid">
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/chaj-s-molokom.svg" alt="Чай с молоком" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Чай с молоком</h4>
+                            <p class="menu-card__desc">С сахаром</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">200 мл.</span>
+                                <span class="menu-card__price">40 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/chaj-s-limonom.svg" alt="Чай с лимоном" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Чай с лимоном и сахаром</h4>
+                            <p class="menu-card__desc">Ароматный чай</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">200 мл.</span>
+                                <span class="menu-card__price">45 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/kofe.svg" alt="Кофе" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Кофе 3 в 1 / чёрный с сахаром</h4>
+                            <p class="menu-card__desc">Горячий кофе</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">200 мл.</span>
+                                <span class="menu-card__price">45 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="images/menu/kompot.svg" alt="Компот" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__body">
+                            <h4 class="menu-card__name">Компот</h4>
+                            <p class="menu-card__desc">Домашний компот</p>
+                            <div class="menu-card__footer">
+                                <span class="menu-card__weight">200 мл.</span>
+                                <span class="menu-card__price">40 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Containers info -->
+            <div class="menu__extra">
+                <h3 class="menu__category-title">Контейнеры и приборы</h3>
+                <div class="menu__extra-grid">
+                    <div class="menu__extra-item">
+                        <span>Контейнер большой</span><span>20 ₽</span>
+                    </div>
+                    <div class="menu__extra-item">
+                        <span>Контейнер средний</span><span>12 ₽</span>
+                    </div>
+                    <div class="menu__extra-item">
+                        <span>Контейнер круглый для супа</span><span>23 ₽</span>
+                    </div>
+                    <div class="menu__extra-item">
+                        <span>Контейнер салатный</span><span>5 ₽</span>
+                    </div>
+                    <div class="menu__extra-item">
+                        <span>Ложка / вилка / пакет</span><span>3 ₽</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts -->
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <h2 class="section-title">Контакты</h2>
+            <div class="contacts__content">
+                <div class="contacts__info">
+                    <div class="contacts__item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                        <div>
+                            <strong>Телефон</strong>
+                            <a href="tel:+79242958903">8 (924) 295-89-03</a>
+                        </div>
+                    </div>
+                    <div class="contacts__item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                        <div>
+                            <strong>Режим работы</strong>
+                            <p>Ежедневно</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contacts__legal">
+                    <h3>Юридическая информация</h3>
+                    <p><strong>ИП Дабасамбуева Баира Раднажаповна</strong></p>
+                    <p>ИНН: 032313456570</p>
+                    <p>ОГРНИП: 319753600001691</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__brand">
+                <img src="images/logo.svg" alt="Кафе БАЯН" class="footer__logo">
+                <p class="footer__tagline">Домашняя кухня с душой</p>
+            </div>
+            <div class="footer__links">
+                <h4>Навигация</h4>
+                <ul>
+                    <li><a href="#hero">Главная</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#menu">Меню</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer__contact">
+                <h4>Свяжитесь с нами</h4>
+                <a href="tel:+79242958903">8 (924) 295-89-03</a>
+            </div>
+            <div class="footer__legal">
+                <h4>Юридическая информация</h4>
+                <p>ИП Дабасамбуева Баира Раднажаповна</p>
+                <p>ИНН: 032313456570</p>
+                <p>ОГРНИП: 319753600001691</p>
+                <p>Р/с: 40802810774000001075</p>
+                <p>Банк: Читинское отделение №8600 ПАО Сбербанк</p>
+                <p>БИК: 047601637</p>
+                <p>К/с: 30101810500000000637</p>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <p>&copy; 2026 Кафе «БАЯН». ИП Дабасамбуева Б.Р. ИНН: 032313456570 ОГРНИП: 319753600001691</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile call button -->
+    <a href="tel:+79242958903" class="mobile-call" aria-label="Позвонить">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
