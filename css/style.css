@@ -723,13 +723,39 @@ ul { list-style: none; }
 
 .footer__bottom {
     border-top: 1px solid rgba(255,255,255,0.08);
-    padding: 20px 0;
+    padding: 28px 0;
     text-align: center;
 }
-.footer__bottom p {
-    font-size: 0.8rem;
-    opacity: 0.4;
+.footer__copyright {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 10px;
+}
+.footer__requisites {
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.35);
+    margin-bottom: 4px;
     line-height: 1.6;
+}
+.footer__docs {
+    margin-top: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 6px 4px;
+}
+.footer__docs a {
+    color: rgba(255,255,255,0.5);
+    font-size: 0.85rem;
+    transition: color var(--transition);
+}
+.footer__docs a:hover {
+    color: var(--gold-light);
+}
+.footer__docs-sep {
+    color: rgba(255,255,255,0.2);
+    font-size: 0.85rem;
 }
 
 /* ===== Mobile Call Button ===== */
