@@ -641,6 +641,22 @@ ul { list-style: none; }
     color: var(--text);
     font-size: 1.05rem;
 }
+.contacts__2gis {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 24px;
+    background: var(--dark-green);
+    color: var(--white);
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all var(--transition);
+}
+.contacts__2gis:hover {
+    background: var(--green);
+    color: var(--white);
+    transform: translateY(-2px);
+}
 
 .contacts__legal {
     background: var(--cream);
