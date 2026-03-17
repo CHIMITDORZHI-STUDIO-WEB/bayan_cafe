@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#8B4513"/>
+  <rect width="400" height="300" fill="url(#grain)" opacity="0.05"/>
+  <defs>
+    <pattern id="grain" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="1" height="1" fill="white" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <text x="200" y="130" text-anchor="middle" font-size="64" fill="rgba(255,255,255,0.9)">🍖</text>
+  <text x="200" y="200" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="rgba(255,255,255,0.85)" font-weight="bold">Тефтели</text>
+</svg>
