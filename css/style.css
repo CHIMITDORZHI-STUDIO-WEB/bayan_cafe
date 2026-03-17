@@ -544,7 +544,7 @@ ul { list-style: none; }
     color: var(--gray-400);
 }
 .menu-card__price {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
     font-weight: 700;
     color: var(--dark-green);
     font-family: var(--font-display);
@@ -581,10 +581,10 @@ ul { list-style: none; }
 }
 .menu__extra-item:last-child { border-bottom: none; }
 .menu__extra-item span:last-child {
-    font-weight: 600;
+    font-weight: 700;
     color: var(--dark-green);
     font-family: var(--font-display);
-    font-size: 1.15rem;
+    font-size: 1.3rem;
 }
 
 /* ===== Contacts ===== */
@@ -662,6 +662,7 @@ ul { list-style: none; }
     background: var(--cream);
     padding: 32px;
     border-radius: var(--radius);
+    text-align: center;
 }
 .contacts__legal h3 {
     font-family: var(--font-display);
@@ -735,6 +736,28 @@ ul { list-style: none; }
     font-family: var(--font-display);
     font-size: 1.3rem;
     font-weight: 600;
+}
+.footer__address,
+.footer__hours {
+    font-size: 0.9rem;
+    margin-top: 8px;
+    opacity: 0.6;
+}
+.footer__2gis {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 6px 18px;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 50px;
+    color: rgba(255,255,255,0.7);
+    font-size: 0.85rem;
+    font-family: var(--font-body);
+    font-weight: 500;
+    transition: all var(--transition);
+}
+.footer__2gis:hover {
+    border-color: var(--gold-light);
+    color: var(--gold-light);
 }
 
 .footer__legal p {
@@ -829,7 +852,7 @@ ul { list-style: none; }
     .menu-card__body { padding: 12px 14px; }
     .menu-card__name { font-size: 1.05rem; }
     .menu-card__desc { font-size: 0.8rem; margin-bottom: 8px; }
-    .menu-card__price { font-size: 1.1rem; }
+    .menu-card__price { font-size: 1.2rem; }
     .menu__extra { padding: 20px; }
     .menu__extra-title { font-size: 1.3rem; }
     .menu__extra-item { font-size: 0.9rem; padding: 12px 0; }
