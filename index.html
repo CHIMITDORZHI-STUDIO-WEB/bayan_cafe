@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Кафе БАЯН — Домашняя кухня</title>
-    <meta name="description" content="Кафе БАЯН — уютное кафе с домашней кухней. Буузы, плов, борщ, выпечка и многое другое. Доступные цены, вкусная еда.">
+    <title>Кафе БАЯН — Домашняя бурятская кухня</title>
+    <meta name="description" content="Кафе БАЯН — уютное кафе с домашней бурятской кухней. Буузы, плов, борщ, выпечка и многое другое. Доступные цены, вкусная еда.">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
@@ -16,6 +16,7 @@
         <div class="container header__inner">
             <a href="#hero" class="header__logo">
                 <img src="images/logo.svg" alt="Кафе БАЯН" class="header__logo-img">
+                <span class="header__logo-text">БАЯН</span>
             </a>
             <nav class="header__nav" id="nav">
                 <ul class="header__nav-list">
@@ -24,9 +25,13 @@
                     <li><a href="#menu" class="header__nav-link" data-nav>Меню</a></li>
                     <li><a href="#contacts" class="header__nav-link" data-nav>Контакты</a></li>
                 </ul>
+                <a href="tel:+79242958903" class="header__phone-mobile">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                    8 (924) 295-89-03
+                </a>
             </nav>
             <a href="tel:+79242958903" class="header__phone">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
                 <span>8 (924) 295-89-03</span>
             </a>
             <button class="header__burger" id="burger" aria-label="Меню">
@@ -37,49 +42,67 @@
 
     <!-- Hero -->
     <section class="hero" id="hero">
+        <div class="hero__bg">
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1600&q=80&fit=crop" alt="" class="hero__bg-img">
+        </div>
         <div class="hero__overlay"></div>
         <div class="container hero__inner">
-            <img src="images/logo.svg" alt="Кафе БАЯН" class="hero__logo">
+            <div class="hero__badge">Домашняя кухня</div>
             <h1 class="hero__title">Кафе «БАЯН»</h1>
-            <p class="hero__subtitle">Домашняя кухня с душой и теплом</p>
+            <p class="hero__subtitle">Настоящая бурятская и домашняя кухня<br>с теплом и заботой о каждом госте</p>
             <div class="hero__actions">
-                <a href="#menu" class="btn btn--primary">Наше меню</a>
-                <a href="tel:+79242958903" class="btn btn--outline">Позвонить</a>
+                <a href="#menu" class="btn btn--primary">Смотреть меню</a>
+                <a href="tel:+79242958903" class="btn btn--glass">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                    Позвонить
+                </a>
             </div>
+        </div>
+        <div class="hero__scroll">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg>
         </div>
     </section>
 
     <!-- About -->
     <section class="about" id="about">
         <div class="container">
-            <h2 class="section-title">О нашем кафе</h2>
-            <div class="about__content">
-                <div class="about__text">
-                    <p>Добро пожаловать в кафе <strong>«БАЯН»</strong>! Мы готовим с любовью и заботой, используя только свежие и натуральные продукты.</p>
-                    <p>В нашем меню вы найдёте блюда домашней кухни: наваристые супы, сочные буузы, ароматный плов, свежую выпечку и многое другое. Каждое блюдо приготовлено по проверенным рецептам, как дома у бабушки.</p>
-                    <p>Приходите к нам — мы всегда рады гостям!</p>
+            <div class="about__grid">
+                <div class="about__img-col">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80&fit=crop" alt="Интерьер кафе" class="about__img" loading="lazy">
                 </div>
-                <div class="about__features">
-                    <div class="feature">
-                        <div class="feature__icon">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                <div class="about__text-col">
+                    <span class="section-label">О нас</span>
+                    <h2 class="section-title">Добро пожаловать<br>в кафе «БАЯН»</h2>
+                    <p class="about__text">Мы готовим с любовью и заботой, используя только свежие и натуральные продукты. В нашем меню — блюда бурятской и домашней кухни: наваристые супы, сочные буузы, ароматный плов, свежая выпечка и многое другое.</p>
+                    <p class="about__text">Каждое блюдо приготовлено по проверенным рецептам. Приходите к нам — мы всегда рады гостям!</p>
+                    <div class="about__features">
+                        <div class="feature">
+                            <div class="feature__icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                            </div>
+                            <div>
+                                <strong>Свежие продукты</strong>
+                                <p>Натуральные ингредиенты</p>
+                            </div>
                         </div>
-                        <h3 class="feature__title">Свежие продукты</h3>
-                        <p class="feature__text">Только натуральные ингредиенты</p>
-                    </div>
-                    <div class="feature">
-                        <div class="feature__icon">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                        <div class="feature">
+                            <div class="feature__icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                            </div>
+                            <div>
+                                <strong>Быстро и вкусно</strong>
+                                <p>Готовим с душой</p>
+                            </div>
                         </div>
-                        <h3 class="feature__title">Быстро и вкусно</h3>
-                        <p class="feature__text">Блюда готовятся с душой</p>
-                    </div>
-                    <div class="feature">
-                        <div class="feature__icon">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                        <div class="feature">
+                            <div class="feature__icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                            </div>
+                            <div>
+                                <strong>Доступные цены</strong>
+                                <p>Вкусно и недорого</p>
+                            </div>
                         </div>
-                        <h3 class="feature__title">Доступные цены</h3>
-                        <p class="feature__text">Вкусно поесть — не значит дорого</p>
                     </div>
                 </div>
             </div>
@@ -89,27 +112,27 @@
     <!-- Menu -->
     <section class="menu" id="menu">
         <div class="container">
-            <h2 class="section-title">Наше меню</h2>
-            <p class="section-subtitle">Меню кафе «БАЯН»</p>
+            <span class="section-label section-label--center">Меню</span>
+            <h2 class="section-title section-title--center">Наши блюда</h2>
 
-            <!-- Menu category tabs -->
-            <div class="menu__tabs">
-                <button class="menu__tab active" data-tab="cold">Закуски</button>
-                <button class="menu__tab" data-tab="breakfast">Завтраки</button>
-                <button class="menu__tab" data-tab="first">Первые блюда</button>
-                <button class="menu__tab" data-tab="second">Вторые блюда</button>
-                <button class="menu__tab" data-tab="garnish">Гарниры</button>
-                <button class="menu__tab" data-tab="bakery">Выпечка</button>
-                <button class="menu__tab" data-tab="drinks">Напитки</button>
+            <div class="menu__tabs-wrap">
+                <div class="menu__tabs">
+                    <button class="menu__tab active" data-tab="cold">Закуски</button>
+                    <button class="menu__tab" data-tab="breakfast">Завтраки</button>
+                    <button class="menu__tab" data-tab="first">Первые блюда</button>
+                    <button class="menu__tab" data-tab="second">Вторые блюда</button>
+                    <button class="menu__tab" data-tab="garnish">Гарниры</button>
+                    <button class="menu__tab" data-tab="bakery">Выпечка</button>
+                    <button class="menu__tab" data-tab="drinks">Напитки</button>
+                </div>
             </div>
 
             <!-- Cold appetizers -->
             <div class="menu__category active" id="cat-cold">
-                <h3 class="menu__category-title">Холодные закуски</h3>
                 <div class="menu__grid">
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/ovoshchnoj-salat.svg" alt="Овощной салат" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop" alt="Овощной салат" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Овощной салат</h4>
@@ -122,7 +145,7 @@
                     </div>
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/olivie.svg" alt="Оливье" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1623428187969-5da2dcea5ebf?w=400&h=300&fit=crop" alt="Оливье" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Оливье</h4>
@@ -135,7 +158,7 @@
                     </div>
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/vinegret.svg" alt="Винегрет / Крабовый" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1604909052743-94e838986d24?w=400&h=300&fit=crop" alt="Винегрет" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Винегрет / Крабовый</h4>
@@ -148,7 +171,7 @@
                     </div>
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/seld-pod-shuboj.svg" alt="Сельдь под шубой" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1574484284002-952d92456975?w=400&h=300&fit=crop" alt="Сельдь под шубой" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Сельдь под шубой</h4>
@@ -161,7 +184,7 @@
                     </div>
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/svekolnyj-salat.svg" alt="Свекольный салат" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1515543237350-b3eea1ec8082?w=400&h=300&fit=crop" alt="Свекольный салат" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Свекольный салат</h4>
@@ -177,11 +200,10 @@
 
             <!-- Breakfast -->
             <div class="menu__category" id="cat-breakfast">
-                <h3 class="menu__category-title">Завтраки</h3>
                 <div class="menu__grid">
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/glazunya.svg" alt="Глазунья" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?w=400&h=300&fit=crop" alt="Глазунья" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Глазунья</h4>
@@ -194,7 +216,7 @@
                     </div>
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/kolbasa-zharenaya.svg" alt="Колбаса жареная" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=400&h=300&fit=crop" alt="Колбаса жареная" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Колбаса жареная</h4>
@@ -207,7 +229,7 @@
                     </div>
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/kasha.svg" alt="Каши" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1517673132405-a56a62b18caf?w=400&h=300&fit=crop" alt="Каши" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Каши рисовая, манная</h4>
@@ -223,11 +245,10 @@
 
             <!-- First courses -->
             <div class="menu__category" id="cat-first">
-                <h3 class="menu__category-title">Первые блюда</h3>
                 <div class="menu__grid">
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/aarsa.svg" alt="Аарса" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&h=300&fit=crop" alt="Аарса" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Аарса</h4>
@@ -240,7 +261,7 @@
                     </div>
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/borshch.svg" alt="Борщ, Рассольник" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1603105037880-880cd4f8412a?w=400&h=300&fit=crop" alt="Борщ" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Борщ, Рассольник</h4>
@@ -253,7 +274,7 @@
                     </div>
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/lagman.svg" alt="Лагман" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop" alt="Лагман" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Лагман</h4>
@@ -266,7 +287,7 @@
                     </div>
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/sup-domashnij.svg" alt="Суп домашний" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?w=400&h=300&fit=crop" alt="Суп домашний" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Суп домашний</h4>
@@ -279,7 +300,7 @@
                     </div>
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/banshataj.svg" alt="Баншатай" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1583032015879-e5022cb87c3b?w=400&h=300&fit=crop" alt="Баншатай" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Баншатай</h4>
@@ -292,7 +313,7 @@
                     </div>
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/pelmeni.svg" alt="Пельмени" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1583577612013-4e6e0e081b0a?w=400&h=300&fit=crop" alt="Пельмени" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Пельмени</h4>
@@ -308,11 +329,10 @@
 
             <!-- Second courses -->
             <div class="menu__category" id="cat-second">
-                <h3 class="menu__category-title">Вторые блюда</h3>
                 <div class="menu__grid">
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/buuzy.svg" alt="Буузы" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1625938145744-e380515399bf?w=400&h=300&fit=crop" alt="Буузы" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Буузы</h4>
@@ -325,7 +345,7 @@
                     </div>
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/vareniki.svg" alt="Вареники с картофелем" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1587049016823-69ef9d68d9a4?w=400&h=300&fit=crop" alt="Вареники" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Вареники с картофелем</h4>
@@ -338,7 +358,7 @@
                     </div>
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/gulyash.svg" alt="Гуляш из говядины" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1608039829572-abe453458948?w=400&h=300&fit=crop" alt="Гуляш" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Гуляш из говядины</h4>
@@ -351,7 +371,7 @@
                     </div>
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/gorbusha.svg" alt="Горбуша запеченная" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=400&h=300&fit=crop" alt="Горбуша" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Горбуша запеченная с картофелем</h4>
@@ -364,7 +384,7 @@
                     </div>
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/ryba-pod-marinadom.svg" alt="Рыба под маринадом" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=300&fit=crop" alt="Рыба под маринадом" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Рыба под маринадом</h4>
@@ -377,7 +397,7 @@
                     </div>
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/zharkoe.svg" alt="Жаркое" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1534939561126-855b8675edd7?w=400&h=300&fit=crop" alt="Жаркое" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Жаркое с курицей/свининой</h4>
@@ -390,7 +410,7 @@
                     </div>
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/kotleta.svg" alt="Котлета" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1577906096429-f73c2c312435?w=400&h=300&fit=crop" alt="Котлета" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Котлета</h4>
@@ -403,7 +423,7 @@
                     </div>
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/kuritsa.svg" alt="Курица" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=300&fit=crop" alt="Курица" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Курица</h4>
@@ -416,7 +436,7 @@
                     </div>
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/myaso-verevochkoj.svg" alt="Мясо верёвочкой" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop" alt="Мясо верёвочкой" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Мясо верёвочкой</h4>
@@ -429,11 +449,11 @@
                     </div>
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/myaso-po-kitajski.svg" alt="Мясо по-китайски" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?w=400&h=300&fit=crop" alt="Мясо по-китайски" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Мясо по-китайски с лапшой фунчоза</h4>
-                            <p class="menu-card__desc">Мясо с стеклянной лапшой</p>
+                            <p class="menu-card__desc">Мясо со стеклянной лапшой</p>
                             <div class="menu-card__footer">
                                 <span class="menu-card__weight">300 гр.</span>
                                 <span class="menu-card__price">220 ₽</span>
@@ -442,7 +462,7 @@
                     </div>
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/plov.svg" alt="Плов" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=400&h=300&fit=crop" alt="Плов" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Плов</h4>
@@ -455,7 +475,7 @@
                     </div>
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/tefteli.svg" alt="Тефтели" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?w=400&h=300&fit=crop" alt="Тефтели" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Тефтели</h4>
@@ -468,7 +488,7 @@
                     </div>
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/solyanka.svg" alt="Солянка" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1594756202469-9ff9799b2e4e?w=400&h=300&fit=crop" alt="Солянка" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Солянка</h4>
@@ -481,7 +501,7 @@
                     </div>
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/svinina-podzharka.svg" alt="Свинина поджарка" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1432139555190-58524dae6a55?w=400&h=300&fit=crop" alt="Свинина поджарка" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Свинина поджарка / с грибами</h4>
@@ -494,7 +514,7 @@
                     </div>
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/tsujvan.svg" alt="Цуйван" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?w=400&h=300&fit=crop" alt="Цуйван" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Цуйван</h4>
@@ -507,7 +527,7 @@
                     </div>
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/kartofel-fri.svg" alt="Картофель фри" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?w=400&h=300&fit=crop" alt="Картофель фри" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Картофель фри</h4>
@@ -520,7 +540,7 @@
                     </div>
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/naggetsy.svg" alt="Наггетсы" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1562967914-608f82629710?w=400&h=300&fit=crop" alt="Наггетсы" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Наггетсы</h4>
@@ -536,11 +556,10 @@
 
             <!-- Garnish -->
             <div class="menu__category" id="cat-garnish">
-                <h3 class="menu__category-title">Гарниры</h3>
                 <div class="menu__grid">
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/pyure.svg" alt="Пюре картофельное" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1596560548464-f010549b84d7?w=400&h=300&fit=crop" alt="Пюре" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Пюре картофельное</h4>
@@ -553,7 +572,7 @@
                     </div>
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/rozhki.svg" alt="Рожки" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400&h=300&fit=crop" alt="Рожки" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Рожки</h4>
@@ -566,7 +585,7 @@
                     </div>
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/ris-grechka.svg" alt="Рис, гречка" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1536304993881-460e4e4b1583?w=400&h=300&fit=crop" alt="Рис, гречка" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Рис, гречка</h4>
@@ -579,7 +598,7 @@
                     </div>
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/lapsha-domashnyaya.svg" alt="Лапша домашняя" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?w=400&h=300&fit=crop" alt="Лапша домашняя" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Лапша домашняя</h4>
@@ -595,11 +614,10 @@
 
             <!-- Bakery -->
             <div class="menu__category" id="cat-bakery">
-                <h3 class="menu__category-title">Выпечка</h3>
                 <div class="menu__grid">
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/bliny.svg" alt="Блины" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1519676867240-f03562e64548?w=400&h=300&fit=crop" alt="Блины" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Блины</h4>
@@ -612,7 +630,7 @@
                     </div>
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/vafelnaya-trubochka.svg" alt="Вафельная трубочка" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1568051243851-f9b136146e97?w=400&h=300&fit=crop" alt="Вафельная трубочка" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Вафельная трубочка</h4>
@@ -625,7 +643,7 @@
                     </div>
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/cheburek.svg" alt="Чебурек" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1601924287811-e34de5d17476?w=400&h=300&fit=crop" alt="Чебурек" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Чебурек</h4>
@@ -638,7 +656,7 @@
                     </div>
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/kurnik.svg" alt="Курник" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1608039829572-abe453458948?w=400&h=300&fit=crop" alt="Курник" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Курник</h4>
@@ -651,7 +669,7 @@
                     </div>
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/pitstsa.svg" alt="Пицца" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=300&fit=crop" alt="Пицца" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Пицца</h4>
@@ -664,7 +682,7 @@
                     </div>
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/pirozhki.svg" alt="Пирожки" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&h=300&fit=crop" alt="Пирожки" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Пирожки / Пирог с яблоком</h4>
@@ -677,7 +695,7 @@
                     </div>
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/pirozhki-liver.svg" alt="Пирожки с ливером" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?w=400&h=300&fit=crop" alt="Пирожки с ливером" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Пирожки с ливером/мясом и рисом</h4>
@@ -690,7 +708,7 @@
                     </div>
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/sosiska-v-teste.svg" alt="Сосиска в тесте" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1619740455993-9d701c8da2c3?w=400&h=300&fit=crop" alt="Сосиска в тесте" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Сосиска в тесте</h4>
@@ -703,7 +721,7 @@
                     </div>
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/hleb.svg" alt="Хлеб" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1549931319-a545753467c8?w=400&h=300&fit=crop" alt="Хлеб" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Хлеб</h4>
@@ -719,11 +737,10 @@
 
             <!-- Drinks -->
             <div class="menu__category" id="cat-drinks">
-                <h3 class="menu__category-title">Напитки</h3>
                 <div class="menu__grid">
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/chaj-s-molokom.svg" alt="Чай с молоком" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400&h=300&fit=crop" alt="Чай с молоком" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Чай с молоком</h4>
@@ -736,7 +753,7 @@
                     </div>
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/chaj-s-limonom.svg" alt="Чай с лимоном" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400&h=300&fit=crop" alt="Чай с лимоном" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Чай с лимоном и сахаром</h4>
@@ -749,7 +766,7 @@
                     </div>
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/kofe.svg" alt="Кофе" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&h=300&fit=crop" alt="Кофе" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Кофе 3 в 1 / чёрный с сахаром</h4>
@@ -762,7 +779,7 @@
                     </div>
                     <div class="menu-card">
                         <div class="menu-card__img-wrap">
-                            <img src="images/menu/kompot.svg" alt="Компот" class="menu-card__img" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?w=400&h=300&fit=crop" alt="Компот" class="menu-card__img" loading="lazy">
                         </div>
                         <div class="menu-card__body">
                             <h4 class="menu-card__name">Компот</h4>
@@ -776,25 +793,15 @@
                 </div>
             </div>
 
-            <!-- Containers info -->
+            <!-- Containers -->
             <div class="menu__extra">
-                <h3 class="menu__category-title">Контейнеры и приборы</h3>
+                <h3 class="menu__extra-title">Контейнеры и приборы</h3>
                 <div class="menu__extra-grid">
-                    <div class="menu__extra-item">
-                        <span>Контейнер большой</span><span>20 ₽</span>
-                    </div>
-                    <div class="menu__extra-item">
-                        <span>Контейнер средний</span><span>12 ₽</span>
-                    </div>
-                    <div class="menu__extra-item">
-                        <span>Контейнер круглый для супа</span><span>23 ₽</span>
-                    </div>
-                    <div class="menu__extra-item">
-                        <span>Контейнер салатный</span><span>5 ₽</span>
-                    </div>
-                    <div class="menu__extra-item">
-                        <span>Ложка / вилка / пакет</span><span>3 ₽</span>
-                    </div>
+                    <div class="menu__extra-item"><span>Контейнер большой</span><span>20 ₽</span></div>
+                    <div class="menu__extra-item"><span>Контейнер средний</span><span>12 ₽</span></div>
+                    <div class="menu__extra-item"><span>Контейнер круглый для супа</span><span>23 ₽</span></div>
+                    <div class="menu__extra-item"><span>Контейнер салатный</span><span>5 ₽</span></div>
+                    <div class="menu__extra-item"><span>Ложка / вилка / пакет</span><span>3 ₽</span></div>
                 </div>
             </div>
         </div>
@@ -803,29 +810,40 @@
     <!-- Contacts -->
     <section class="contacts" id="contacts">
         <div class="container">
-            <h2 class="section-title">Контакты</h2>
-            <div class="contacts__content">
-                <div class="contacts__info">
-                    <div class="contacts__item">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-                        <div>
-                            <strong>Телефон</strong>
-                            <a href="tel:+79242958903">8 (924) 295-89-03</a>
-                        </div>
+            <span class="section-label section-label--center">Контакты</span>
+            <h2 class="section-title section-title--center">Свяжитесь с нами</h2>
+            <div class="contacts__grid">
+                <div class="contacts__card">
+                    <div class="contacts__card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
                     </div>
-                    <div class="contacts__item">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                        <div>
-                            <strong>Режим работы</strong>
-                            <p>Ежедневно</p>
-                        </div>
-                    </div>
+                    <strong>Телефон</strong>
+                    <a href="tel:+79242958903" class="contacts__phone">8 (924) 295-89-03</a>
                 </div>
-                <div class="contacts__legal">
-                    <h3>Юридическая информация</h3>
-                    <p><strong>ИП Дабасамбуева Баира Раднажаповна</strong></p>
-                    <p>ИНН: 032313456570</p>
-                    <p>ОГРНИП: 319753600001691</p>
+                <div class="contacts__card">
+                    <div class="contacts__card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    </div>
+                    <strong>Режим работы</strong>
+                    <p>Ежедневно</p>
+                </div>
+            </div>
+
+            <div class="contacts__legal">
+                <h3>Юридическая информация</h3>
+                <div class="contacts__legal-grid">
+                    <div>
+                        <p><strong>ИП Дабасамбуева Баира Раднажаповна</strong></p>
+                        <p>ИНН: 032313456570</p>
+                        <p>ОГРНИП: 319753600001691</p>
+                        <p>Р/с: 40802810774000001075</p>
+                    </div>
+                    <div>
+                        <p><strong>Банковские реквизиты</strong></p>
+                        <p>Банк: Читинское отделение №8600 ПАО Сбербанк</p>
+                        <p>БИК: 047601637</p>
+                        <p>К/с: 30101810500000000637</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -836,9 +854,9 @@
         <div class="container footer__inner">
             <div class="footer__brand">
                 <img src="images/logo.svg" alt="Кафе БАЯН" class="footer__logo">
-                <p class="footer__tagline">Домашняя кухня с душой</p>
+                <p>Домашняя бурятская кухня</p>
             </div>
-            <div class="footer__links">
+            <div class="footer__nav">
                 <h4>Навигация</h4>
                 <ul>
                     <li><a href="#hero">Главная</a></li>
@@ -848,23 +866,19 @@
                 </ul>
             </div>
             <div class="footer__contact">
-                <h4>Свяжитесь с нами</h4>
+                <h4>Контакты</h4>
                 <a href="tel:+79242958903">8 (924) 295-89-03</a>
             </div>
             <div class="footer__legal">
-                <h4>Юридическая информация</h4>
-                <p>ИП Дабасамбуева Баира Раднажаповна</p>
+                <h4>Реквизиты</h4>
+                <p>ИП Дабасамбуева Б.Р.</p>
                 <p>ИНН: 032313456570</p>
                 <p>ОГРНИП: 319753600001691</p>
-                <p>Р/с: 40802810774000001075</p>
-                <p>Банк: Читинское отделение №8600 ПАО Сбербанк</p>
-                <p>БИК: 047601637</p>
-                <p>К/с: 30101810500000000637</p>
             </div>
         </div>
         <div class="footer__bottom">
             <div class="container">
-                <p>&copy; 2026 Кафе «БАЯН». ИП Дабасамбуева Б.Р. ИНН: 032313456570 ОГРНИП: 319753600001691</p>
+                <p>&copy; 2026 Кафе «БАЯН» &mdash; ИП Дабасамбуева Баира Раднажаповна. ИНН: 032313456570. ОГРНИП: 319753600001691</p>
             </div>
         </div>
     </footer>
